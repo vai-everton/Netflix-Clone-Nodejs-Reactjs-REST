@@ -1,0 +1,28 @@
+.Card {
+    flex: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    max-height: 135px;
+
+    margin-right: 4px;
+
+    justify-content: center;
+}
+
+
+.Card .Conteudo {
+    color: #000;
+    justify-content: center;
+    max-width: 275px;
+    max-height: 150px;
+}
+
+.Card .Conteudo img {
+    width: 100%;
+    height: auto;
+}

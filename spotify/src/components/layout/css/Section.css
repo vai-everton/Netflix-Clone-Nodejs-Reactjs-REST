@@ -1,0 +1,22 @@
+.Card {
+    overflow: hidden;
+    width: 100%;
+}
+
+.Card:hover {
+    width:150%;
+} 
+
+.line-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+h3 {
+    float: left;
+    font-size: 150%;
+    font-weight: 200%;
+    padding: 0px 50px;
+}

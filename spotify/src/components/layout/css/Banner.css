@@ -1,0 +1,65 @@
+.banner {
+    overflow: hidden;
+    height: 550px;
+    position: relative;
+    align-items: initial;
+    justify-content: left;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner .cont {
+    width: 40%;
+    position: absolute;;
+    bottom: 50px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+.banner .cont .titulo {
+    font-size: 300%;
+}
+
+.banner .button-assistir {
+    background-color: #ffffff;
+    border: 0px ;
+    border-radius: 4px;
+    color: black;
+    padding: 9px 30px;   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.banner .button-assistir:hover {
+    background-color: #ffffff9f;
+}
+.banner .button-mais {
+    background-color: #e2e2e23d;
+    border: 0px ;
+    border-radius: 4px;
+    color: white;
+    padding: 9px 35px;   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.banner .button-mais:hover {
+    background-color: #7c7c7c5d;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+p {
+    font-weight: bolder;
+}
