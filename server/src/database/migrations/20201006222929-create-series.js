@@ -2,48 +2,38 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-
-    await queryInterface.createTable('filmes', { 
+    await queryInterface.createTable('series', {
       id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        autoIncrement: true,
-        allowNull: false,
-
+         type: Sequelize.INTEGER,
+         primaryKey: true,
+         autoIncrement: true,
+         allowNull: false,
       },
-      
+
       titulo: {
         type: Sequelize.STRING,
         allowNull: false,
       },
 
-      descricao: {
+      descricao:{
         type: Sequelize.STRING,
         allowNull: false,
       },
-      ano: {
+
+      temporadas:{
         type: Sequelize.INTEGER,
         allowNull: false,
       },
+
       endereco_arquivo: {
         type: Sequelize.STRING,
         allowNull: false,
-      },
-
-      created_at: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
-
-      updated_at: {
-        type: Sequelize.DATE,
-        allowNull: false,
       }
-    });
+      });
 
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('filmes');
+    await queryInterface.dropTable('series');
   }
 };

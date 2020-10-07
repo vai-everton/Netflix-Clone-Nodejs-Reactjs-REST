@@ -1,3 +1,5 @@
+require('sequelize');
+
 module.exports = {
     dialect: "mysql",
     host: "localhost",

@@ -1,4 +1,6 @@
 var express = require('express');
+const FilmeController = require('./controllers/FilmesController');
+
 var router = express.Router();
 
 router.use(function timeLog(req, res, next) {
@@ -14,8 +16,7 @@ router.get('/', function(req, res){
     });
 });
 
-router.get('/filmes', function(req, res) {
-    res.json("filmes");
-});
+router.post('/filmes', FilmeController.store);
+
 
 module.exports  = router;

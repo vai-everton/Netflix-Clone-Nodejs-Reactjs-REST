@@ -2,6 +2,8 @@ var express = require('express'),
     app = express(),
     port = process.env.port || 3333;
 
+require('./database')
+
 
 const routes = require('./routes');
 
